@@ -224,7 +224,7 @@ function App() {
                           {item.name}
                         </h3>
                         <p className="text-red-500 font-bold text-sm md:text-base">
-                          ${item.price}
+                          ₹{item.price}
                         </p>
                       </div>
                       <div className="flex items-center space-x-2 flex-shrink-0">
@@ -258,7 +258,7 @@ function App() {
                       Total:
                     </span>
                     <span className="text-xl md:text-2xl font-bold text-red-500">
-                      ${getTotalPrice()}
+                      ₹{getTotalPrice()}
                     </span>
                   </div>
                   <button className="w-full bg-red-500 text-white py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg hover:bg-red-600 transition-colors">
@@ -427,7 +427,7 @@ function App() {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-lg sm:text-xl md:text-2xl font-bold text-red-500">
-                    ${burger.price}
+                    ₹{burger.price}
                   </span>
                   <button
                     onClick={() => addToCart(burger)}
